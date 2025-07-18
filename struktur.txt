@@ -1,0 +1,24 @@
+invoice-generator/
+│
+├── index.php                  # Halaman utama upload Excel + pilih template
+├── process.php                # Memproses file Excel, membagi per 7 baris, dan generate PDF
+│
+├── templates/                 # Template desain invoice per perusahaan
+│   ├── template_a.php         # Template untuk Perusahaan A
+│   ├── template_b.php         # Template untuk Perusahaan B
+│   └── template_c.php         # Template untuk Perusahaan C
+│
+├── uploads/                   # Folder penyimpanan file Excel yang di-upload
+│
+├── invoices/                  # Folder hasil PDF invoice yang sudah jadi
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css          # Styling umum (opsional, untuk form & tampilan web)
+│   └── logos/
+│       ├── logo_a.png         # Logo perusahaan A
+│       ├── logo_b.png         # Logo perusahaan B
+│       └── logo_c.png         # Logo perusahaan C
+│
+├── vendor/                    # Composer dependencies (PhpSpreadsheet, Dompdf)
+├── composer.json              # Konfigurasi Composer
