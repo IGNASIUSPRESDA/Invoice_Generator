@@ -48,7 +48,7 @@ foreach ($dataGroup as $row) $totalAll += (int) $row[4];
             margin-bottom: 20px;
         }
         th, td {
-            padding: 10px 12px;
+            padding: 10px 14px;
         }
         thead th {
             text-align: center;
@@ -57,8 +57,7 @@ foreach ($dataGroup as $row) $totalAll += (int) $row[4];
             text-align: left;
         }
         tbody td:nth-child(2),
-        tbody td:nth-child(3),
-        tbody td:nth-child(4) {
+        tbody td:nth-child(3) {
             text-align: center;
         }
         .total-label {
@@ -100,10 +99,9 @@ foreach ($dataGroup as $row) $totalAll += (int) $row[4];
 <table>
     <thead>
         <tr>
-            <th>Item</th>
-            <th>Qty</th>
-            <th>Price</th>
-            <th>Total</th>
+            <th style="width: 60%;">Item</th>
+            <th style="width: 20%;">Qty</th>
+            <th style="width: 20%;">Total</th>
         </tr>
     </thead>
     <tbody>
@@ -111,7 +109,6 @@ foreach ($dataGroup as $row) $totalAll += (int) $row[4];
         <tr>
             <td><?= $row[2] ?></td>
             <td><?= $row[3] ?></td>
-            <td>Rp.<?= number_format($row[4], 0, ',', '.') ?></td>
             <td>Rp.<?= number_format($row[4], 0, ',', '.') ?></td>
         </tr>
         <?php endforeach; ?>
@@ -122,7 +119,7 @@ foreach ($dataGroup as $row) $totalAll += (int) $row[4];
 
 <table>
     <tr>
-        <td class="total-label" colspan="3">Total</td>
+        <td class="total-label" colspan="2">Total</td>
         <td class="total-value">Rp.<?= number_format($totalAll, 0, ',', '.') ?></td>
     </tr>
 </table>

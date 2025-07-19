@@ -16,9 +16,9 @@ invoice-generator/
 │   ├── css/
 │   │   └── style.css          # Styling umum (opsional, untuk form & tampilan web)
 │   └── logos/
-│       ├── logo_a.png         # Logo perusahaan A
-│       ├── logo_b.png         # Logo perusahaan B
-│       └── logo_c.png         # Logo perusahaan C
-│
+│   │   └── logo_a.png         # Logo perusahaan A
+│   └── tanda-tangan/
+│       └── ttd_a.png          # Tanda Tangan perusahaan A
+│ 
 ├── vendor/                    # Composer dependencies (PhpSpreadsheet, Dompdf)
 ├── composer.json              # Konfigurasi Composer
